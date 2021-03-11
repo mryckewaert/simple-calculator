@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Simple Calculator</title>
+
+        <link rel="stylesheet" href="style.css">
+
+
+
+    </head>
+
+    <body>
+        <form id="form">
+            <label for="firstValue">Choose the First Value :</label>
+            <input type="number" step="any" id="firstValue" placeholder="0">
+            <label for="secondValue">Choose the Second Value :</label>
+            <input type="number" step="any" id="secondValue" placeholder="0">
+            <label for="operator">Choose an operator :</label>
+            <select name="operator" id="operator">
+                <option value="+"> + </option>
+                <option value="-"> - </option>
+                <option value="*"> * </option>
+                <option value="/"> / </option>
+                <option value="%"> % </option>
+            </select>
+            <input type="submit" id="calcul" value="Calculate">
+        </form>
+
+        <p id="resultat"></p>
+
+        <script src="calculator.js"></script>
+    <!-- <script src="lessOrMore.js"></script> -->
+    </body>
+
+</html>
